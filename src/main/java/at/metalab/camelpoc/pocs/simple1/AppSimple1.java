@@ -17,6 +17,9 @@ import net.timewalker.ffmq3.FFMQConstants;
 public class AppSimple1 {
 
 	public static void main(String[] args) throws Exception {
+		// ./ffmq-admin-client.sh -command createQueue name=TESTFOO persistentStore.maxBlockCount=1000 persistentStore.autoExtendAmount=100 persistentStore.initialBlockCount=10
+		// ./ffmq-admin-client.sh -command createQueue name=TESTFOO2 persistentStore.maxBlockCount=1000 persistentStore.autoExtendAmount=100 persistentStore.initialBlockCount=10
+		
 		CamelContext context = new DefaultCamelContext();
 
 		final String compTest = "test-jms";
